@@ -60,6 +60,8 @@ Se crean los modelos manualmente con cuidado de marcar al atributo identificador
     [BsonRepresentation(BsonType.ObjectId)]
     public string? Id { get; set; }
 
+    En los otros atributos se utiliza la prop:[BsonElement("<name del campo en la bd>")]
+
 Luego se crea el Contexto o Settings de la BD con una clase similar a esta:
 
     public class BlogDatabaseSettings
